@@ -34,7 +34,9 @@ export default function Layout(prop: {
 		scrollToTop();
 	};
 
-	window.addEventListener('scroll', scrollFunc);
+	if (typeof window !== 'undefined') {
+		window.addEventListener('scroll', scrollFunc);
+	}
 
 	const showMenu = () => {
 		if (navMenu.current.style.display === 'block') {
