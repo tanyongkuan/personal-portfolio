@@ -11,7 +11,12 @@ export default function resume() {
 				<section className="resume">
 					<img src={resumeImg} alt="resume" width="930" />
 					<div>
-						<a className="button" href={resumePDF} target="_blank">
+						<a
+							className="button"
+							href={resumePDF}
+							target="_blank"
+							rel="noopener"
+						>
 							Download Resume
 						</a>
 					</div>

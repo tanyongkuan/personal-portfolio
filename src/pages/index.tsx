@@ -45,22 +45,46 @@ export default function IndexPage() {
 									alt="reactLogo"
 								/>
 								<div className="framework-name">
-									<a href="https://www.gatsbyjs.com/">GatsbyJS</a>
-									<a href="https://nextjs.org/">NextJS</a>
-									<a href="https://mui.com/">Material UI</a>
+									<a
+										href="https://www.gatsbyjs.com/"
+										target="_blank"
+										rel="noopener"
+									>
+										GatsbyJS
+									</a>
+									<a href="https://nextjs.org/" target="_blank" rel="noopener">
+										NextJS
+									</a>
+									<a href="https://mui.com/" target="_blank" rel="noopener">
+										Material UI
+									</a>
 								</div>
 							</div>
 							<div className="framework-content">
 								<img src={vuejsLogo} className="framework-logo" alt="vueLogo" />
 								<div className="framework-name">
-									<a href="https://quasar.dev/">Quasar</a>
+									<a href="https://quasar.dev/" target="_blank" rel="noopener">
+										Quasar
+									</a>
 								</div>
 							</div>
 							<div className="framework-content">
 								<img src={cssLogo} className="framework-logo" alt="cssLogo" />
 								<div className="framework-name">
-									<a href="https://styled-components.com/">styled-components</a>
-									<a href="https://tailwindcss.com/">tailwindcss</a>
+									<a
+										href="https://styled-components.com/"
+										target="_blank"
+										rel="noopener"
+									>
+										styled-components
+									</a>
+									<a
+										href="https://tailwindcss.com/"
+										target="_blank"
+										rel="noopener"
+									>
+										tailwindcss
+									</a>
 								</div>
 							</div>
 						</div>
@@ -95,10 +119,15 @@ export default function IndexPage() {
 								<a
 									href="https://github.com/tanyongkuan/pokemon-tinder"
 									target="_blank"
+									rel="noopener"
 								>
 									Github
 								</a>
-								<a href="https://pokemon-tinder.netlify.app/" target="_blank">
+								<a
+									href="https://pokemon-tinder.netlify.app/"
+									target="_blank"
+									rel="noopener"
+								>
 									Visit Website
 								</a>
 							</div>
