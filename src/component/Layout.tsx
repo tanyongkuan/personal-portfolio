@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet';
 import { useRef } from 'react';
 
 import icon from '/static/images/logo.png';
+import '../styles/index.scss';
 
 export default function Layout(prop: {
 	children: JSX.Element | JSX.Element[];

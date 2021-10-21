@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Layout from '../component/Layout';
 
-import '../styles/index.scss';
 import pokemonTinder from '/static/images/pokemon-tinder.png';
 import reactLogo from '/static/images/react-logo.png';
 import vuejsLogo from '/static/images/vuejs-logo.png';
