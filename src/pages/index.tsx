@@ -2,6 +2,7 @@ import * as React from 'react';
 import Layout from '../component/Layout';
 
 import pokemonTinder from '/static/images/pokemon-tinder.png';
+import wordDictionary from '/static/images/word-dictionary.png';
 import reactLogo from '/static/images/react-logo.png';
 import vuejsLogo from '/static/images/vuejs-logo.png';
 import cssLogo from '/static/images/css-logo.png';
@@ -107,6 +108,33 @@ export default function IndexPage() {
 				<p>Check out my latest web development portfolio projects</p>
 				<div className="portfolio">
 					<div className="portfolio-item">
+						<img src={wordDictionary} alt="wordDictionary" />
+						<div className="portfolio-overlay">
+							<h2>Word Dictionary</h2>
+							<ul>
+								<li>React</li>
+								<li>Typescript</li>
+								<li>SCSS</li>
+							</ul>
+							<div>
+								<a
+									href="https://github.com/tanyongkuan/word-dictionary"
+									target="_blank"
+									rel="noopener"
+								>
+									Github
+								</a>
+								<a
+									href="https://yk-word-dictionary.netlify.app/"
+									target="_blank"
+									rel="noopener"
+								>
+									Visit Website
+								</a>
+							</div>
+						</div>
+					</div>
+					<div className="portfolio-item">
 						<img src={pokemonTinder} alt="pokemonTinder" />
 						<div className="portfolio-overlay">
 							<h2>Pokemon Tinder</h2>
@@ -133,7 +161,6 @@ export default function IndexPage() {
 							</div>
 						</div>
 					</div>
-					<div className="portfolio-item"></div>
 				</div>
 			</section>
 
