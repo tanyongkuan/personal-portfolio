@@ -14,10 +14,12 @@ export default function Layout(prop: {
 	const scrollFunc = () => {
 		let y = window.scrollY;
 
-		if (y > 0) {
-			scrollToTopButton.current.className = 'top-link show';
-		} else {
-			scrollToTopButton.current.className = 'top-link hide';
+		if (scrollToTopButton.current) {
+			if (y > 0) {
+				scrollToTopButton.current.className = 'top-link show';
+			} else {
+				scrollToTopButton.current.className = 'top-link hide';
+			}
 		}
 	};
 
@@ -40,10 +42,12 @@ export default function Layout(prop: {
 	}
 
 	const showMenu = () => {
-		if (navMenu.current.style.display === 'block') {
-			navMenu.current.style.display = 'none';
-		} else {
-			navMenu.current.style.display = 'block';
+		if (navMenu.current) {
+			if (navMenu.current.style.display === 'block') {
+				navMenu.current.style.display = 'none';
+			} else {
+				navMenu.current.style.display = 'block';
+			}
 		}
 	};
 

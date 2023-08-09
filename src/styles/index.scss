@@ -3,7 +3,7 @@
 :root {
 	--ff-primary: sans-serif;
 
-	--clr-primary-400: #800000;
+	--clr-primary-400: #e8cf7d;
 	--clr-seperator: #e6ecf8;
 	--clr-black: #141c3a;
 
@@ -100,7 +100,7 @@ a {
 		padding: 0.5rem 2rem;
 		display: inline-flex;
 		text-decoration: none;
-		color: white;
+		color: black;
 	}
 }
 
@@ -220,7 +220,7 @@ footer {
 .about {
 	padding-bottom: 12rem;
 	background: var(--clr-primary-400);
-	color: white;
+	color: black;
 
 	p {
 		max-width: 50ch;
@@ -302,9 +302,13 @@ footer {
 	width: 100%;
 	max-width: 75rem;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	grid-template-columns: repeat(1, minmax(20rem, 1fr));
 	grid-gap: 1rem;
 	margin-top: 4rem;
+
+	@media (min-width: 1024px) {
+		grid-template-columns: repeat(2, minmax(20rem, 1fr));
+	}
 
 	* {
 		margin-top: 0;
@@ -345,8 +349,9 @@ footer {
 			border-width: 1px solid var(--clr-black);
 			border-radius: 0.25rem;
 			box-shadow: 1px 1px 0 rgb(0 0 0 / 25%);
-			margin: 0.125rem;
-			padding: 0.125rem 0.25rem;
+			margin: 0.25rem;
+			padding: 0.25rem 0.5rem;
+			color: black;
 		}
 
 		a {
@@ -361,6 +366,7 @@ footer {
 
 			&:hover {
 				background: var(--clr-primary-400);
+				color: black;
 			}
 		}
 	}
@@ -419,7 +425,7 @@ footer {
 
 footer {
 	background: var(--clr-primary-400);
-	color: white;
+	color: black;
 	font-size: var(--fs-100);
 
 	.social-media {
@@ -429,11 +435,11 @@ footer {
 	}
 
 	svg {
-		fill: white;
+		fill: black;
 	}
 
 	a {
-		color: white;
+		color: black;
 		font-weight: bold;
 	}
 }
