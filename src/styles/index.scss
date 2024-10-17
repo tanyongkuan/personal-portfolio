@@ -316,6 +316,7 @@ footer {
 
   .portfolio-item {
     position: relative;
+    min-height: 19rem;
 
     &:hover .portfolio-overlay {
       opacity: 0.85;
